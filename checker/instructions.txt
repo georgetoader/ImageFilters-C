@@ -1,0 +1,40 @@
+instructions.txt
+
+===============================================================================
+STRUCTURA ARHIVA---------------------------------------------------------------
+    * check.sh - script-ul bash ce realizeaza testarea automata
+
+    * ./input/images - imaginile folosite in testarea temei
+
+    * ./input/filters - filtrele convolutionale folosite in testarea temei
+
+    * ./input/pooling - filtrele de pooling folosite in testarea temei
+
+    * ./input/clustering - valorile de threshold folosite in testare pentru
+task-ul de clusterizare
+
+    * ./ref - aici apar toate imaginile de referinta folosite de checker
+
+    * ./output - aici o sa apara imaginile rezultate din rularea executabilului
+vostru de catre checker; le puteti folosi pentru a depana mai usor in cazul
+in care acestea nu sunt identice cu cele referinta
+! Atentie, daca numele imaginiilor nu sunt cum este precizat in enunt, acestea
+nu vor aparea in directorul output !
+===============================================================================
+
+===============================================================================
+INSTRUCTIUNI DE UTILIZARE------------------------------------------------------
+1) Asigurati-va ca checker-ul are drepturi de executie:
+
+$ ls -al
+-rw-rw-r-- 1 laurentiu laurentiu 6973 dec 15 17:44 check.sh
+$ chmod +x check.sh
+$ ls -al
+-rwxrwxr-x 1 laurentiu laurentiu 6973 dec 15 17:44 check.sh
+
+2) Asigurati-va ca aveti toate sursele, fisierul Makefile si fisierul README
+in radacina directorului, unde se afla si fisierul check.sh.
+
+3) Rulati checker-ul si spor la debugging:
+$ ./check.sh
+===============================================================================
